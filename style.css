@@ -1,0 +1,202 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; /* Fonte elegante */
+}
+
+body {
+    background-color: #ffffff; /* Fundo suave */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(36, 34, 33, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    transition: background-color 0.3s;
+    z-index: 1000;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+main h1 {
+    font-family:;
+    font-size: 4em;
+    text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.628);
+}
+
+
+.container-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-texto h1 {
+    color: white;
+    margin-left: 10px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu li {
+    margin: 0 20px;
+}
+
+.menu li a {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s; /* Transição suave */
+}
+
+.menu li:hover {
+    transform: scale(1.09); 
+    transition: transform 0.3s;
+}
+
+.parallax {
+    background-color: #bb3838;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.sobre {
+    background-color: #242221; /* Cor do fundo igual ao header */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.sobre h2 {
+    text-align: left;
+}
+
+.sobre p {
+    text-align: left;
+    width: 800px;
+}
+
+.sobre-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.sobre-texto {
+    margin-left: 10px;
+    flex: 1;
+    margin-right: 20px;
+}
+
+.sobre h2 {
+    margin-left: 10px;
+}
+
+.sobre-video {
+    flex: 1;
+}
+
+.sobre iframe {
+    border-radius: 10px;
+}
+
+.processo {
+    padding: 40px 20px;
+    text-align: left;
+}
+
+.processo h2 {
+    text-indent: 10px;
+}
+
+.processo-content {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.processo-item {
+    background-color: #bb3838;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out; /* Suaviza a transição ao aumentar o tamanho */
+}
+
+.processo-item:hover {
+    transform: scale(1.05); /* Aumenta o tamanho do item ao passar o mouse */
+}
+
+.info {
+    display: none; /* Esconde informações inicialmente */
+}
+
+.faq {
+    padding: 40px 20px;
+    background-color: #ffffff;
+}
+
+.faq-item {
+    background-color: #bb3838;
+    color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out; /* Suaviza a mudança de cor */
+}
+
+.faq h2 {
+    text-indent: 10px;
+}
+
+.faq-item:hover {
+    transform: scale(1.005);
+    transition: transform 0.3s ease-in-out; /* Altera a cor ao passar o mouse */
+}
+
+.faq-info {
+    display: none; /* Esconde informações inicialmente */
+}
+
+.footer {
+    padding: 40px 20px;
+    text-align: left;
+    background-color: #242221; /* Cor do fundo igual ao header */
+    color: white;
+}
+
+.footer p {
+    margin-bottom: 20px;
+}
+
+footer #map iframe {
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ao redor do mapa */
+}
+
