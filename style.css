@@ -5,13 +5,17 @@
     font-family: 'Roboto', sans-serif; 
 }
 
+#home, #sobre, #processo, #faq, #contato {
+    
+}
+
 body {
     background-color: #F8F5F0; /* Fundo suave */
 }
 
 p {
     font-family: "Afacad Flux", sans-serif;
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 
 h2 {
@@ -142,7 +146,7 @@ main h1 {
 
 .sobre p {
     text-align: justify;
-    width: 600px;
+    width: 800px;
 }
 
 .sobre-content {
@@ -153,21 +157,22 @@ main h1 {
 }
 
 .sobre-texto {
+    flex: 0 1 50%;
     margin-left: 10px;
     flex: 1;
     margin-right: 50px;
+}
+
+.sobre-video {
+    flex: 0 1 50%;
 }
 
 .sobre h2 {
     margin-left: 10px;
 }
 
-.sobre-video {
-    flex: 1;
-}
-
 .sobre iframe {
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .processo {
@@ -179,6 +184,7 @@ main h1 {
 .processo p {
     text-align: justify;
     color: #242221;
+    width: 800px;
     margin-left: 10px;
 }
 
@@ -189,13 +195,12 @@ main h1 {
 
 .processo-content {
     display: flex;
-    justify-content: space-between; /* Cria espaço entre a coluna da esquerda e da direita */
-    flex-wrap: wrap; /* Permite que as colunas se ajustem em telas menores */
+    justify-content: space-between; /* Cria espaço entre a coluna da esquerda e da direita */ /* Permite que as colunas se ajustem em telas menores */
     margin-top: 20px;
 }
 
 .processo-left {
-    flex: 0 1 45%; /* Define a largura da coluna esquerda */
+    flex: 0 1 50%; /* Define a largura da coluna esquerda */
     padding-right: 20px; /* Espaço à direita da coluna */
 }
 
@@ -207,8 +212,6 @@ main h1 {
 }
 
 .processo-right {
-    flex: 0 1 55%; /* Define a largura da coluna direita */
-    display: flex;
     flex-direction: column; /* Coloca as caixas uma acima da outra */
     gap: 24px; /* Espaço entre as caixas */
 }
@@ -219,11 +222,12 @@ main h1 {
     color: #242221;
     border-radius: 5px;
     padding: 20px 8px;
-    width: 580px;
+    width: 700px;
     text-align: center;
     cursor: pointer;
     transition: transform 0.2s ease-in-out; /* Suaviza a transição ao aumentar o tamanho */
     margin-left: 150px;
+    margin-bottom: 10px;
 }
 
 .processo-item h3 {
