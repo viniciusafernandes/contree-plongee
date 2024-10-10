@@ -5,10 +5,6 @@
     font-family: 'Roboto', sans-serif; 
 }
 
-#home, #sobre, #processo, #faq, #contato {
-    
-}
-
 body {
     background-color: #F8F5F0; /* Fundo suave */
 }
@@ -19,6 +15,7 @@ p {
 }
 
 h2 {
+    margin-left: 10px;
     font-family: "Rubik", sans-serif;
     font-size: 2.5em;
 }
