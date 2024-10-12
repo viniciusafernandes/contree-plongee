@@ -9,8 +9,6 @@ body {
     background-color: #F8F5F0; /* Fundo suave */
 }
 
-
-
 p {
     font-family: "Afacad Flux", sans-serif;
     font-size: 1.5em;
@@ -25,8 +23,6 @@ h2 {
 h3 {
     font-family: "Afacad Flux", sans-serif;
 }
-
-
 
 header {
     font-size: 0.8em;
@@ -115,8 +111,8 @@ html {
 
 main h1 {
     font-family: "Rubik", sans-serif;
-    font-size: 5em;
-    margin-left: 50px;
+    font-size: 4.5em;
+    margin-left: 150px;
     margin-bottom: 10px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.667);
     text-align: left;
@@ -124,15 +120,15 @@ main h1 {
 
 main h4 {
     font-family: "Rubik", sans-serif;
-    font-size: 3em;
-    margin-left: 50px;
+    font-size: 2.5em;
+    margin-left: 150px;
     margin-top: 0; /* Ajusta o espaçamento em cima do h4 */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.628);
     text-align: left;
 }
 
 .parallax {
-    background-image: linear-gradient(to bottom, #c11212, #6a0e0e);
+    background-image: url(imagens/trabalho-final-2.gif);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -171,21 +167,22 @@ main h4 {
 
 .sobre-texto {
     flex: 0 1 50%;
-    margin-left: 10px;
+    margin-left: 150px;
     flex: 1;
     margin-right: 50px;
 }
 
 .sobre-video {
-    flex: 0 1 50%;
+    margin-right: 150px;
 }
 
 .sobre h2 {
-    margin-left: 10px;
+    margin-left: 150px;
 }
 
 .sobre iframe {
     border-radius: 5px;
+    margin-right: 150px;
 }
 
 .processo {
@@ -196,20 +193,21 @@ main h4 {
 
 .processo p {
     text-align: justify;
-    color: #242221;
+    color: #47403d;
     width: 800px;
-    margin-left: 10px;
+    margin-left: 150px;
 }
 
 .processo h2 {
-    text-indent: 10px;
+    margin-left: 150px;
     color:#c11212 ;
+    margin-bottom: 30px;
 }
 
 .processo-content {
     display: flex;
     justify-content: space-between; /* Cria espaço entre a coluna da esquerda e da direita */ /* Permite que as colunas se ajustem em telas menores */
-    margin-top: 20px;
+
 }
 
 .processo-left {
@@ -221,12 +219,7 @@ main h4 {
     font-family: "Afacad Flux", sans-serif;
 }
 
-.processo-imagem {
-    background-color: #c11212;
-    margin-top: 10px;
-    width: 100%; /* A imagem ocupa toda a largura da coluna */
-    border-radius: 5px; /* Bordas arredondadas */
-}
+
 
 .processo-right {
     flex-direction: column; /* Coloca as caixas uma acima da outra */
@@ -244,7 +237,8 @@ main h4 {
     text-align: center;
     cursor: pointer;
     transition: transform 0.2s ease-in-out; /* Suaviza a transição ao aumentar o tamanho */
-    margin-left: 150px;
+    margin-left: 100px;
+    margin-right: 150px;
     margin-bottom: 10px;
 }
 
@@ -274,6 +268,8 @@ main h4 {
 
 .faq {
     padding: 40px 20px;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 .faq-item {
@@ -317,21 +313,21 @@ main h4 {
 }
 
 footer h2 {
+    margin-left: 150px;
     color: #c11212;
     margin-bottom: 20px;
-    margin-left: 20px;
 }
 
 .footer p {
     font-size: 1em;
     margin-bottom: 5px;
-    margin-left: 20px;
+    margin-left: 150px;
 }
 
-footer #map iframe {
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ao redor do mapa */
+.myMap {
+    border-radius: 10px; 
     margin-top: 20px;
+    filter: grayscale(100%) invert(90%);
 }
 
 /* ////////
@@ -350,4 +346,16 @@ footer #map iframe {
 .info.show, .faq-info.show {
     max-height: 300px; /* Ajuste de acordo com a quantidade de conteúdo */
     opacity: 1;
+}
+
+.boneca-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ /* Ajuste conforme necessário */
+}
+
+.boneca {
+    width: 700px;
+    height: auto;
 }
