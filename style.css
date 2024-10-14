@@ -121,7 +121,7 @@ main h4 {
 
 /* Efeitos Parallax */
 .parallax {
-    background-image: url(imagens/poster-1.gif);
+    background-image: url(imagens/poster.gif);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
