@@ -1,3 +1,4 @@
+/* Reset básico e definição de fontes */
 * {
     padding: 0;
     margin: 0;
@@ -24,6 +25,7 @@ h3 {
     font-family: "Afacad Flux", sans-serif;
 }
 
+/* Estilos do Header */
 header {
     font-size: 0.8em;
     position: fixed;
@@ -34,22 +36,21 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    transition: background-color 0.3s, opacity 0.3s; /* Adiciona transição para opacidade */
+    transition: background-color 0.3s, opacity 0.3s;
     z-index: 1000;
     border-radius: 0px 0px 5px 2px;
 }
 
 .menu {
-    background-color:#ba242400;
+    background-color: #ba242400;
     border-radius: 10px;
     padding: 15px 20px;
 }
 
 #ctt {
-    background-color:#c11212;
+    background-color: #c11212;
     border-radius: 5px;
     font-size: 1em;
-    
 }
 
 .container-logo {
@@ -60,7 +61,6 @@ header {
 .logo-texto img {
     width: 200px;
     height: auto;
-    
 }
 
 header a {
@@ -72,20 +72,12 @@ header a:hover {
     text-decoration: underline;
 }
 
+/* Transição suave ao descer */
 html {
     scroll-behavior: smooth;
 }
 
-.container-logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo-texto h1 {
-    color: white;
-    margin-left: 10px;
-}
-
+/* Estilos do menu */
 .menu ul {
     display: flex;
     list-style: none;
@@ -99,16 +91,16 @@ html {
     font-size: 1.5em;
     text-decoration: none;
     color: white;
-    transition: transform 0.3s; /* Transição suave */
+    transition: transform 0.3s;
 }
 
 .menu li:hover {
     text-decoration: underline;
     text-decoration-color: white;
-    transform: scale(1.09); 
-    transition: transform 0.3s;
+    transform: scale(1.09);
 }
 
+/* Estilos do Main */
 main h1 {
     font-family: "Rubik", sans-serif;
     font-size: 4.5em;
@@ -122,27 +114,28 @@ main h4 {
     font-family: "Rubik", sans-serif;
     font-size: 2.5em;
     margin-left: 150px;
-    margin-top: 0; /* Ajusta o espaçamento em cima do h4 */
+    margin-top: 0;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.628);
     text-align: left;
 }
 
+/* Efeitos Parallax */
 .parallax {
-    background-image: url(imagens/trabalho-final-2.gif);
+    background-image: url(imagens/poster-1.gif);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
     height: 100vh;
     display: flex;
-    flex-direction: column; /* Empilha os elementos verticalmente */
-    align-items: flex-start; /* Alinha o conteúdo à esquerda */
-    justify-content: center; /* Centraliza verticalmente o conteúdo */
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
     color: white;
 }
 
-
+/* Seção Sobre */
 .sobre {
-    background-color: #242221; /* Cor do fundo igual ao header */
+    background-color: #242221;
     color: white;
     padding: 60px 20px;
     text-align: center;
@@ -151,6 +144,7 @@ main h4 {
 .sobre h2 {
     text-align: left;
     color: #c11212;
+    margin-left: 150px;
 }
 
 .sobre p {
@@ -168,7 +162,6 @@ main h4 {
 .sobre-texto {
     flex: 0 1 50%;
     margin-left: 150px;
-    flex: 1;
     margin-right: 50px;
 }
 
@@ -176,15 +169,12 @@ main h4 {
     margin-right: 150px;
 }
 
-.sobre h2 {
-    margin-left: 150px;
-}
-
 .sobre iframe {
     border-radius: 5px;
     margin-right: 150px;
 }
 
+/* Seção Processo */
 .processo {
     padding: 40px 20px;
     text-align: left;
@@ -200,35 +190,28 @@ main h4 {
 
 .processo h2 {
     margin-left: 150px;
-    color:#c11212 ;
+    color: #c11212;
     margin-bottom: 30px;
 }
 
 .processo-content {
     display: flex;
-    justify-content: space-between; /* Cria espaço entre a coluna da esquerda e da direita */ /* Permite que as colunas se ajustem em telas menores */
-
+    justify-content: space-between;
 }
 
 .processo-left {
-    flex: 0 1 50%; /* Define a largura da coluna esquerda */
-    padding-right: 20px; /* Espaço à direita da coluna */
+    flex: 0 1 50%;
+    padding-right: 20px;
 }
-
-.info {
-    font-family: "Afacad Flux", sans-serif;
-}
-
-
 
 .processo-right {
-    flex-direction: column; /* Coloca as caixas uma acima da outra */
-    gap: 24px; /* Espaço entre as caixas */
+    flex-direction: column;
+    gap: 24px;
 }
 
 .processo-item {
     font-family: "Afacad Flux", sans-serif;
-    background-color:#F8F5F0;
+    background-color: #F8F5F0;
     border: 0.3px solid #c11212;
     color: #242221;
     border-radius: 5px;
@@ -236,7 +219,7 @@ main h4 {
     width: 700px;
     text-align: center;
     cursor: pointer;
-    transition: transform 0.2s ease-in-out; /* Suaviza a transição ao aumentar o tamanho */
+    transition: transform 0.2s ease-in-out;
     margin-left: 100px;
     margin-right: 150px;
     margin-bottom: 10px;
@@ -248,71 +231,59 @@ main h4 {
 }
 
 .processo-item:hover {
-    transform: scale(1.05); /* Aumenta o tamanho do item ao passar o mouse */
+    transform: scale(1.05);
     box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.228);
 }
 
-.info {
-    display: none; /* Inicialmente oculta as informações */
-    margin-top: 10px; /* Espaço acima das informações */
+/* Geral faq e processo */
+
+.info, .faq-info {
+    font-family: "Afacad Flux", sans-serif;
 }
 
 
-.info {
-    display: none; /* Esconde informações inicialmente */
-}
-
-.faq h2 {
-    color:#c11212;
-}
-
+/* FAQ */
 .faq {
     padding: 40px 20px;
     margin-left: 150px;
     margin-right: 150px;
 }
 
+.faq h2 {
+    color: #c11212;
+    text-indent: 10px;
+}
+
 .faq-item {
     font-family: "Afacad Flux", sans-serif;
-    background-color:#F8F5F0;
-    color:#242221;
+    background-color: #F8F5F0;
+    color: #242221;
     border: 0.3px solid #c11212;
     border-radius: 5px;
     margin: 10px;
     padding: 20px;
     cursor: pointer;
-    transition: transform 0.3s ease-in-out; /* Suaviza a mudança de cor */
+    transition: transform 0.3s ease-in-out;
 }
 
 .faq-item h3 {
     color: #c11212;
 }
 
-.faq-info {
-    font-family: "Afacad Flux", sans-serif;
-}
-
-.faq h2 {
-    text-indent: 10px;
-}
-
 .faq-item:hover {
-    transform: scale(1.025); /* Aumenta o tamanho do item ao passar o mouse */
+    transform: scale(1.025);
     box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.228);
 }
 
-.faq-info {
-    display: none; /* Esconde informações inicialmente */
-}
-
+/* Rodapé */
 .footer {
     padding: 40px 20px;
     text-align: left;
-    background-color: #242221; /* Cor do fundo igual ao header */
+    background-color: #242221;
     color: white;
 }
 
-footer h2 {
+.footer h2 {
     margin-left: 150px;
     color: #c11212;
     margin-bottom: 20px;
@@ -324,15 +295,18 @@ footer h2 {
     margin-left: 150px;
 }
 
+.footer a {
+    text-decoration: underline;
+    color: white;
+    font-family: "Afacad Flux", sans-serif;
+}
+
+/* Mapa */
 .myMap {
-    border-radius: 10px; 
+    border-radius: 10px;
     margin-top: 20px;
     filter: grayscale(100%) invert(90%);
 }
-
-/* ////////
-////////////
-////////// */
 
 /* Transição suave de altura e opacidade para as informações */
 .info, .faq-info {
@@ -342,17 +316,16 @@ footer h2 {
     transition: max-height 0.6s ease, opacity 0.6s ease;
 }
 
-/* Quando visível, ajusta a altura máxima e a opacidade */
 .info.show, .faq-info.show {
-    max-height: 300px; /* Ajuste de acordo com a quantidade de conteúdo */
+    max-height: 300px;
     opacity: 1;
 }
 
+/* Boneca */
 .boneca-container {
     display: flex;
     justify-content: center;
     align-items: center;
- /* Ajuste conforme necessário */
 }
 
 .boneca {

@@ -89,4 +89,3 @@ window.addEventListener('scroll', function() {
     // Atualiza a cor de fundo com nova opacidade
     header.style.backgroundColor = `rgba(36, 34, 33, ${newOpacity})`; // Ajusta a opacidade do cabeçalho
 });
-
